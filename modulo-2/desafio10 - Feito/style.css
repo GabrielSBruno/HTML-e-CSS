@@ -1,0 +1,38 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'idroid';
+  src: url(fontes/idroid.otf);
+}
+.titulo{
+  font-family: 'idroid';
+  color: #235c37;
+}
+header{
+  background-image: linear-gradient(to bottom, #5cd882, #235c37);
+  color: white;
+  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.395);
+}
+body{
+  background-color: #84e1ad;
+}
+.botoes{
+  display: inline-block; 
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif; font-weight: bold;
+}
+.principal{
+  background-color: white;
+  padding: 10px;
+  text-indent: 20px;
+  width: 800px;
+}
+.quer-aprender{
+  background-color: #5cd882;
+  color: white;
+  border-radius: 10px;
+}
+.mais{
+  background-color: #bef6d6;
+  border-radius: 10px;
+  padding: 10px;
+}

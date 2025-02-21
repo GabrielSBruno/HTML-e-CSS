@@ -1,0 +1,17 @@
+@charset "UTF 8";
+.botoes{
+  border: 2px, solid, black;
+  width: 100px;
+  height: 20px;
+  text-align: center;
+  background-color: yellow;
+  display: inline-block;
+}
+div:hover{
+  background-color: rgb(6, 255, 6);
+  width: 102px;
+  height: 22px;
+}
+a:visited{
+color: black;
+}

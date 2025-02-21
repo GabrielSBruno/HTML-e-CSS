@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grouping tags</title>
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f3a692;
+    }
+    header{
+      background-color:#94afff;
+      padding: 10px;
+      margin: 10px;
+    }
+    nav{
+      background-color: #4B61A2;
+      padding: 3px;
+      box-shadow: 3px 3px 4px rgb(0, 0, 0);
+    }
+    nav > a{
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      margin-right: 30px;
+    }
+    main{
+      background-color: white;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 3px 3px 4px;
+    }
+    article{
+      background-color: lightgrey;
+    }
+    article > aside{
+      background-color: gray;
+    }
+    footer{
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 1px;
+      margin: 0px;
+    }
+    footer > p{
+      margin: 0px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Meu site</h1>
+    <nav>
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+    </nav>
+  </header>
+  <main>
+    <section id="assuntos">
+        <p>Esportes Política Tecnologia</p>
+    </section>
+    <section id="noticias">
+        <article>
+          <h2>Notícias sobre o Brasil</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, nobis rem officia odio architecto adipisci quo, sit deserunt voluptas magni id repellat ad. Ducimus quasi dicta facere ullam amet corporis.</p>
+          <aside>
+            <p>Artigo escrito por José Da Silva</p>
+          </aside>
+        </article>
+    </section>
+  </main>
+  <footer>
+    <p>Desenvolvido por Gabriel Da Silva Bruno</p>
+  </footer>
+</body>
+</html>
