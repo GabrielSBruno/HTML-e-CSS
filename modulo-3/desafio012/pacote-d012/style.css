@@ -3,6 +3,7 @@
 *{
   margin: 0px;
   padding: 0px;
+  font-size: 1em;
 }
 :root{
   --font1: "Passion One", serif;
@@ -11,83 +12,82 @@
   --font2: "Sriracha", serif;
   font-weight: 400;
   font-style: normal;
+  --font3: Verdana, Geneva, Tahoma, sans-serif;
+}
+html, body{
+  background-color: lightgrey;
+  min-height: 100vh;
+  font-family: var(--font3);
 }
 header{
-  font-family: var(--font1);
   background-color: black;
   color: white;
   text-align: center;
-  height: 330px;
-  display: block;
 }
 header > h1{
-  font-size: 160px;
-  padding-top: 60px;
+  padding-top: 50px;
+  font-variant: small-caps;
+  font-family: var(--font1);
+  font-size: 10vw;
 }
 header > p{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding-bottom: 50px;
 }
-header > p > a{
+a{
   text-decoration: none;
   color: white;
+  font-weight: bolder;
 }
-header > p > a > :hover{
+a:hover{
   text-decoration: underline;
 }
 section{
-  padding-top: 80px;
+  padding-top: 10vh;
   padding-left: 40px;
-  padding-bottom: 80px;
+  padding-bottom: 10vh;
   font-family: var(--font2);
-  font-size: 60px;
+  font-size: 3.5vw;
+  line-height: 2em;
 }
-#joaninha{
-  background: black url(imagens/background001.jpg) center center no-repeat fixed;
-  background-size: cover;
-  height: 750px;
-  position: relative;
+
+section > p {
+  padding-bottom: 2em;
 }
-#texto-joaninha{
+
+section.normal{
+  background-color: white;
+  color: black;
+}
+
+section.imagem{
+  background-color: rgb(51, 51, 51);
   color: white;
-  background-color: black;
-  width: 750px;
-  position: absolute;
-  left: 2%;
-}
-#saudade{
-  background: black url(imagens/background002.jpg) center center no-repeat fixed;
+  box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.522);
   background-size: cover;
-  height: 750px;
-  position: relative;
+  background-attachment: fixed;
 }
-#texto-saudade{
-  color: white;
-  text-shadow: 3px black;
-  background-color: rgba(0, 0, 0, 0.549);
-  width: 750px;
-  position: absolute;
-  left: 2%;
+
+section.imagem > p{
+  background-color: rgba(0, 0, 0, 0.546);
+  display: inline-block;
+  padding: 10px;
+  text-shadow: 1px 2px 0px black;
 }
+
+section#img01{
+background-image: url(imagens/background001.jpg);
+background-position: right center;
+}
+
+section#img02{
+  background-image: url(imagens/background002.jpg);
+  background-position: right center;
+}
+
 footer{
   background-color: black;
   height: 50px;
-  position: relative;
-}
-footer > p{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 20px;
-  color: white;
   text-align: center;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-footer > p > a{
-  text-decoration: none;
   color: white;
-}
-footer > p > a > :hover{
-  text-decoration: underline;
+  padding: 10px;
 }
