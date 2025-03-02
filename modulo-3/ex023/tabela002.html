@@ -11,6 +11,7 @@
    table{
     width: 500px;
     border-collapse: collapse;
+    position: relative;
    }
    td, th{
     border: 1px solid black;
@@ -26,6 +27,14 @@
     background-color: gray;
     color: white;
    }
+   thead > tr > th{
+    position: sticky;
+    top: -1px;
+    background-color: gray;
+   }
+   tbody > tr:nth-child(2n) /* (2n) pode ser também (odd) para ímpares ou (even) para pares.*/{
+    background-color: lightgrey;
+   }
    td.num{
     text-align: right;
    }
@@ -33,13 +42,12 @@
 </head>
 <body>
   <h1>Uso de tabelas grandes</h1>
-</body>
 <table>
   <caption>População das unidades federativas.</caption>
   <thead>
     <tr>
-      <td>Estado</td>
-      <td>População</td>
+      <th scope="col">Estado</th>
+      <th scope="col" style="width: 50px;">População</th>
     </tr>
   </thead>
   <tbody>
@@ -89,8 +97,17 @@
     </tr>
   </tbody>
   <tfoot>
-    <td>Total de habitantes</td>
+    <th scope="row">Total de habitantes</th>
     <td class="num"><strong>165.266.575</strong></td>
   </tfoot>
 </table>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni illum, eligendi, eos doloribus tenetur eius facilis cupiditate quam nam mollitia inventore aut non ipsa natus neque dolorem nesciunt voluptatem impedit!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam perspiciatis veritatis nulla? Praesentium atque, ipsum animi, a facere minima perferendis cumque eos sunt possimus autem aperiam excepturi vero ex sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quisquam quam reiciendis vitae rem dicta cum quidem molestiae molestias veritatis atque inventore expedita commodi, nemo quis ipsum id, error voluptate.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni illum, eligendi, eos doloribus tenetur eius facilis cupiditate quam nam mollitia inventore aut non ipsa natus neque dolorem nesciunt voluptatem impedit!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam perspiciatis veritatis nulla? Praesentium atque, ipsum animi, a facere minima perferendis cumque eos sunt possimus autem aperiam excepturi vero ex sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quisquam quam reiciendis vitae rem dicta cum quidem molestiae molestias veritatis atque inventore expedita commodi, nemo quis ipsum id, error voluptate.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni illum, eligendi, eos doloribus tenetur eius facilis cupiditate quam nam mollitia inventore aut non ipsa natus neque dolorem nesciunt voluptatem impedit!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam perspiciatis veritatis nulla? Praesentium atque, ipsum animi, a facere minima perferendis cumque eos sunt possimus autem aperiam excepturi vero ex sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quisquam quam reiciendis vitae rem dicta cum quidem molestiae molestias veritatis atque inventore expedita commodi, nemo quis ipsum id, error voluptate.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni illum, eligendi, eos doloribus tenetur eius facilis cupiditate quam nam mollitia inventore aut non ipsa natus neque dolorem nesciunt voluptatem impedit!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam perspiciatis veritatis nulla? Praesentium atque, ipsum animi, a facere minima perferendis cumque eos sunt possimus autem aperiam excepturi vero ex sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quisquam quam reiciendis vitae rem dicta cum quidem molestiae molestias veritatis atque inventore expedita commodi, nemo quis ipsum id, error voluptate.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni illum, eligendi, eos doloribus tenetur eius facilis cupiditate quam nam mollitia inventore aut non ipsa natus neque dolorem nesciunt voluptatem impedit!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam perspiciatis veritatis nulla? Praesentium atque, ipsum animi, a facere minima perferendis cumque eos sunt possimus autem aperiam excepturi vero ex sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quisquam quam reiciendis vitae rem dicta cum quidem molestiae molestias veritatis atque inventore expedita commodi, nemo quis ipsum id, error voluptate.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni illum, eligendi, eos doloribus tenetur eius facilis cupiditate quam nam mollitia inventore aut non ipsa natus neque dolorem nesciunt voluptatem impedit!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam perspiciatis veritatis nulla? Praesentium atque, ipsum animi, a facere minima perferendis cumque eos sunt possimus autem aperiam excepturi vero ex sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quisquam quam reiciendis vitae rem dicta cum quidem molestiae molestias veritatis atque inventore expedita commodi, nemo quis ipsum id, error voluptate.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni illum, eligendi, eos doloribus tenetur eius facilis cupiditate quam nam mollitia inventore aut non ipsa natus neque dolorem nesciunt voluptatem impedit!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam perspiciatis veritatis nulla? Praesentium atque, ipsum animi, a facere minima perferendis cumque eos sunt possimus autem aperiam excepturi vero ex sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quisquam quam reiciendis vitae rem dicta cum quidem molestiae molestias veritatis atque inventore expedita commodi, nemo quis ipsum id, error voluptate.</p>
+
+</body>
 </html>
